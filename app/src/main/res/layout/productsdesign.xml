@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:id="@+id/product_name"
-        android:text="Test"
+        android:text="@string/Test"
         android:layout_marginTop="10dp"
         android:textSize="14sp"
         android:textColor="@color/colorPrimaryDark"
@@ -23,7 +23,7 @@
         android:layout_marginRight="100dp"
         android:textSize="12sp"
         android:textColor="@color/colorAccent"
-        android:text="Beavers are second only to humans in their ability to manipulate and change their environment"/>
+        android:text="@string/testdata"/>
 
     <ImageView
         android:id="@+id/product_img"
