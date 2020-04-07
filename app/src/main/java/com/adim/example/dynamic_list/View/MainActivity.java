@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         tv_title.setText(title);
     }
 
+    /*if success api hit*/
     @Override
     public void ResSuccess(String response) {
         Log.e("Res>>>>>>>", "" + response);
@@ -121,6 +122,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
         pdt_adapter.notifyDataSetChanged();
     }
+
+    /*if volley library throws error*/
 
     @Override
     public void onError(final String message) {
