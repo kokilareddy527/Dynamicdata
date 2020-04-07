@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.adim.example.dynamic_list.View.MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            android:textSize="14sp"
+            android:textColor="#fff"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Pull down to refresh" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pull"
+        android:layout_above="@+id/rl_viewcart"
+        android:id="@+id/swipe">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/products_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
