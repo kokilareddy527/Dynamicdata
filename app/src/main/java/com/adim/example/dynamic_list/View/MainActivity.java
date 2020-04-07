@@ -92,20 +92,20 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             JSONObject resobj = new JSONObject(response);
 
 
-            String title=resobj.getString("title");
+            String title=resobj.getString(getResources().getString(R.string.title));
 
             setTilte(title);
 
 
-            JSONArray jarray = resobj.getJSONArray("rows");
+            JSONArray jarray = resobj.getJSONArray(getResources().getString(R.string.rows));
             for (int j = 0; j < jarray.length(); j++) {
                 JSONObject respdts = jarray.getJSONObject(j);
                 ProductObjects pdt_obj = new ProductObjects();
 
 
-                pdt_obj.setProductname(respdts.getString("title"));
-                pdt_obj.setPdt_des(respdts.getString("description"));
-                pdt_obj.setProductimg(respdts.getString("imageHref"));
+                pdt_obj.setProductname(respdts.getString(getResources().getString(R.string.title)));
+                pdt_obj.setPdt_des(respdts.getString(getResources().getString(R.string.description)));
+                pdt_obj.setProductimg(respdts.getString(getResources().getString(R.string.imageHref)));
 
 
                 pdtList.add(pdt_obj);

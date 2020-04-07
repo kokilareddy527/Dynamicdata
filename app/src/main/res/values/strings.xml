@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Dynamic_List</string>
+    <string name="title">title</string>
+    <string name="rows">rows</string>
+    <string name="description">description</string>
+    <string name="imageHref">imageHref</string>
+    <string name="Test">Test</string>
+    <string name="testdata">Beavers are second only to humans in their ability to manipulate and change their environment</string>
+
 </resources>
